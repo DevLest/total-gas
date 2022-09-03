@@ -1,27 +1,27 @@
 {
-  "name": "nodejs_app",
+  "name": "total-gas-sales-inventory-management-app",
   "version": "0.0.1",
-  "description": "Test Node",
-  "main": "index.js",
+  "description": "Total Gas sales and inventory monitoring management app built with NodeJs",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app",
-    "dev": "nodemon app"
+    "start" : "nodemon app"
   },
-  "author": "DevLest",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevLest/total-gas.git"
+  },
+  "author": "biono.marz",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevLest/total-gas/issues"
+  },
+  "homepage": "https://github.com/DevLest/total-gas#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.0",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "mongoose": "^6.5.3",
-    "multer": "^1.4.5-lts.1",
-    "passport": "^0.6.0",
-    "passport-local": "^1.0.0",
+    "express-layouts": "^1.0.0",
+    "mongoose": "^6.5.4",
     "path": "^0.12.7"
   }
 }
