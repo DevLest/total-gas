@@ -1,0 +1,37 @@
+<%- include('../_partial/_header'); -%>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Edit Post: <%= post.title %></h1>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <form action="/posts/update" method="POST" enctype="multipart/form-data">
+                <input type="hidden" id="postid" name="postid" value="<%= post._id %>">
+
+                <div class="form-group">
+                    <label for="inputTitle">Title</label>
+                    <input type="text" class="form-control" placeholder="Title" id="inputTitle" name="title" value="<%= post.title %>">
+                </div>
+    
+                <div class="form-group">
+                    <label for="inputFile">Image</label>
+                    <input type="file" class="form-control" placeholder="image" id="inputFile" name="image" value="<%= post.image %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputContent">Content</label>
+                    <textarea class="form-control" rows="3" id="inputContent" placeholder="Content" name="content"><%= post.content %></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default" href="#" role="button">Save</button>
+                </div>
+        </div>
+    
+        </form>
+    </div>
+
+<%- include ('../_partial/_footer'); -%>

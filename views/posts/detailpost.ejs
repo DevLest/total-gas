@@ -1,0 +1,26 @@
+<%- include('../_partial/_header'); -%>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h1><%= post.title  %> </h1>
+        </div>
+    </div>
+
+    <diw class="row">
+        <div class="col-md-6">
+            
+            <img src="<%= "/" + post.image; %>" style="height:250px">
+        </div>
+    </diw>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="pandel-body">
+                    <%= post.content  %> 
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<%- include ('../_partial/_footer'); -%>
